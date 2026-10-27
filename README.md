@@ -2,7 +2,7 @@
 
 Explore a simplified chemistry model in pools, oceans, and hydrothermal vents.
 
-This is the standalone GitHub Pages build of the `origin_of_life` applet from the [physics_demos source collection](https://github.com/MartinAlvarezSergio/physics_demos).
+This is the standalone GitHub Pages build of the `origin_of_life` applet from the local `physics_demos` source collection.
 
 Live: https://martinalvarezsergio.github.io/origin_of_life_playground/
 
