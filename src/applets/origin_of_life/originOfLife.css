@@ -1,0 +1,121 @@
+/* Origin of life: gauges and the ladder in the readouts panel, scoped by AppletStage rootClassName. */
+
+.ool-stage .stage-readouts {
+  width: 250px;
+  max-width: none;
+}
+
+.ool-readouts {
+  display: grid;
+  gap: 8px;
+}
+
+.ool-readouts .stage-hero strong {
+  font-size: 1.45rem;
+}
+
+.ool-gauge {
+  display: grid;
+  gap: 3px;
+}
+
+.ool-gauge-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  color: rgba(235, 232, 226, 0.8);
+}
+
+.ool-gauge-head strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ool-gauge-bar {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.ool-gauge-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Threshold mark on the ingredients gauge. */
+.ool-gauge-bar i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.ool-ladder {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: 4px;
+}
+
+.ool-ladder li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(235, 232, 226, 0.42);
+}
+
+.ool-dot {
+  flex: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.ool-ladder li.is-was {
+  color: rgba(235, 232, 226, 0.72);
+}
+
+.ool-ladder li.is-was .ool-dot {
+  border-color: #7fd3c4;
+}
+
+.ool-ladder li.is-on {
+  color: #ffffff;
+}
+
+.ool-ladder li.is-on .ool-dot {
+  border-color: #7fd3c4;
+  background: #7fd3c4;
+}
+
+.ool-ladder li.is-life.is-on {
+  color: #ffd36b;
+  font-weight: 700;
+}
+
+.ool-ladder li.is-life.is-on .ool-dot {
+  border-color: #ffd36b;
+  background: #ffd36b;
+  box-shadow: 0 0 10px #ffd36b;
+}
+
+.ool-status {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ool-status.is-life {
+  color: #ffd36b;
+}
+
